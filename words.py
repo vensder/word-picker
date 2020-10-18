@@ -32,7 +32,6 @@ def open_file():
         text = clear_text(
             text, r'.-;:"&,0123456789%<>/\\!?'
         )  # TODO: replase with regex: remove not words etc.
-        print(text)
         words = text.split()
         my_set = set(words)
         for word in sorted(my_set):
